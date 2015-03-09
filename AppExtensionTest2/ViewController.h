@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *labelLabel;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+// 紐付けの際は DidEndOnExit で
+- (IBAction)textFieldAction:(id)sender;
 
 @end
 
